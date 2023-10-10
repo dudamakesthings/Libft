@@ -13,19 +13,18 @@
 #include <string.h>
 #include <stdio.h>
 
-char *ft_strchr(char *str, int c)
+char *ft_strchr(const char *str, int c)
 {
     int i;
     i = 0;
-    if(str[i] == '\0')
-        return NULL;
+    
     while(str[i] != '\0')
     {
         if(str[i] == c)
-            return &str[i];
+            return (char *)str;
         i++;
     }
-    return &str[i];
+    return NULL;
 }
 
 int main()
