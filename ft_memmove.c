@@ -24,6 +24,11 @@ void *ft_memmove(void *dest, const void *src, unsigned int n)
     while(i < n)
     {
         temp[i] = psrc[i];
+        i++;
+    }
+    i = 0;
+    while(i < n)
+    {
         pdest[i] = temp[i];
         i++;
     }
