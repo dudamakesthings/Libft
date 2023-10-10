@@ -21,7 +21,7 @@ char *ft_strchr(const char *str, int c)
     while(str[i] != '\0')
     {
         if(str[i] == c)
-            return (char *)str;
+            return (char *)&str[i]; // works with (char *)str;
         i++;
     }
     return NULL;
