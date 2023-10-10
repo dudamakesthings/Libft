@@ -21,8 +21,6 @@ unsigned int ft_strlcat(char *dst, const char *src, unsigned int dstsize)
     i2 = 0;
     while(dst[i] != '\0')
          i++;
-    if (i >= dstsize) // checking with is bigger enough
-        i = dstsize - 1;
     while((src[i2] != '\0') && (i < dstsize - 1))
     {
         dst[i] = src[i2];
