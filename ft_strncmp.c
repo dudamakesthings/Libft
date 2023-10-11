@@ -29,6 +29,7 @@ int ft_strncmp(char *str, char *str1, unsigned int n)
             i++;
             j++;
         }
+        n--;
     }
     return (0);
 }
