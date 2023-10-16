@@ -43,12 +43,13 @@ char *ft_strdup(const char *str)
     char *dup;
     i = 0;
     
-    if(str == NULL)
+     if(str == NULL)
         return NULL;
     len = ft_strlen(str) + 1;
-    dup = malloc(len);
+    dup = (char *)malloc(len * sizeof(char));
     ft_strlcpy(dup, str, len);
     return (dup);
+    free(dup);
     
 }
 
