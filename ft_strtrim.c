@@ -59,22 +59,22 @@ char *ft_strtrim(char const *s1, char const *set)
 
     if((s1[i] == '\0') || set[i] == '\0')
         return (0);
-    end = ft_strlen(s1) - 1;
-    while((ft_strchr(set, s1[start])) && (start <= end))
+    end = ft_strlen(s1) - 1; // -1 because the null terminator 
+    while((ft_strchr(set, s1[start])) && (start <= end)) //look for the first index in the beggining s1 out the set
         start++;
-    while((ft_strchr(set, s1[end])) && (end >= 0))
+    while((ft_strchr(set, s1[end])) && (end >= 0)) // look for the first index in the end out of the set
         end--;  
     newstr = (char *)malloc((end - start + 2) * sizeof(char));
     if(newstr == 0)
         return (0);
-    ft_strlcpy(newstr, &s1[start], (end - start + 2));
+    ft_strlcpy(newstr, &s1[start], (end - start + 2)); // two because is 1 for the null terminator and 1 for the zero
     return(newstr);
 }
 
 int main()
 {
-    char str[] = "marim";
-    char set[] = "m";
+    char str[] = "MaMaria MariaMa";
+    char set[] = "Ma";
     char *m = ft_strtrim(str, set);
     printf("%s", m);
 }
