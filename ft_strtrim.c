@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 14:26:06 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/16 18:16:34 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/17 10:39:24 by edribeir       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ char *ft_strtrim(char const *s1, char const *set)
 
     if((s1[i] == '\0') || set[i] == '\0')
         return (0);
-    end = ft_strlen(s1) - 1; // -1 because the null terminator 
+    end = ft_strlen(s1) - 1; // -1 because the start begin at 0 
     while((ft_strchr(set, s1[start])) && (start <= end)) //look for the first index in the beggining s1 out the set
         start++;
     while((ft_strchr(set, s1[end])) && (end >= 0)) // look for the first index in the end out of the set
