@@ -12,18 +12,6 @@
 
 #include <stdlib.h>
 #include <stdio.h> 
-unsigned int ft_strlcpy(char *dst, const char *src, unsigned int size)
-{
-    unsigned int i;
-    i = 0;
-    while(i < (size - 1))
-    {
-        dst[i] = src[i];
-        i++;
-    }
-    dst[i] = 0;
-    return i;
-}
 
 unsigned int ft_strlen (const char *str)
 {   
@@ -63,8 +51,6 @@ char *ft_strjoin(char const *s1, char const *s2)
         j++;
     }
     newstr[j] = '\0';
-    return (newstr);
-
 }
 
 int main()
