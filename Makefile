@@ -6,11 +6,11 @@
 #    By: edribeir <edribeir@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/20 13:36:22 by edribeir      #+#    #+#                  #
-#    Updated: 2023/10/23 19:58:12 by edribeir      ########   odam.nl          #
+#    Updated: 2023/10/24 19:47:13 by edribeir      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Libft.a
+NAME = libft.a
 
 CC = cc
 
@@ -24,7 +24,7 @@ INCLUDE = libft.h
 
 SOURCE = ft_isdigit.c \
 		ft_memset.c \
-	  	ft_strlcpy.c \
+		ft_strlcpy.c \
 		ft_substr.c \
 		ft_atoi.c \
 		ft_isprint.c \
@@ -52,15 +52,19 @@ SOURCE = ft_isdigit.c \
 		ft_memmove.c \
 		ft_strlcat.c \
 		ft_strtrim.c \
+		ft_putchar_fd.c \
+		ft_putstr_fd.c \
+		ft_putnbr_fd.c \
+		ft_putendl_fd.c \
 		
-OBJECTS = $(SOURCE:.c=.o)
+OBJECTS = $(SOURCE:%.c=%.o)
 
 all: $(NAME)
 
 $(NAME) : $(OBJECTS)
 				$(AR) $(NAME) $(OBJECTS)
 
-%.o:%.c $(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+%.o:%.c $(CC) -c $(CFLAGS) -o $@ $^
 
 clean: 
 	$(RM) $(OBJECTS)
