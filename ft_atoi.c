@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// Nícolas é legal
 #include <stdio.h>
 #include <stdlib.h>
 // Only base-10 input can be converted
