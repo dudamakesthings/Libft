@@ -12,6 +12,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
 // Only base-10 input can be converted
 int ft_atoi(const char *str)
 {
