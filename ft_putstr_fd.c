@@ -16,14 +16,17 @@ void ft_putstr_fd(char *s, int fd)
 {
     int i;
     i = 0;
-    while(s[i] != '\0')
+    if(s != NULL)
     {
-        write(fd, &s[i], 1);
-        i++;
+            while(s[i] != '\0')
+        {
+            write(fd, &s[i], 1);
+            i++;
+        }
     }
 }
 
 // int main()
 // {
-//     ft_putstr_fd("banana", 1);
+//     ft_putstr_fd("", 1);
 // }
