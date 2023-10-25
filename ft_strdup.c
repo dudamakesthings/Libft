@@ -6,56 +6,33 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/13 10:37:43 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/13 11:40:22 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/25 15:42:02 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
-unsigned int ft_strlcpy(char *dst, const char *src, unsigned int size)
+char	*ft_strdup(const char *str)
 {
-    unsigned int i;
-    i = 0;
-    while(i < (size - 1))
-    {
-        dst[i] = src[i];
-        i++;
-    }
-    dst[i] = 0;
-    return i;
+	char	*dup;
+	int		i;
+	int		len;
+
+	i = 0;
+	if (str == NULL)
+		return (NULL);
+	len = ft_strlen(str) + 1;
+	dup = (char *)malloc(len * sizeof(char));
+	if (dup == NULL)
+		return (NULL);
+	ft_strlcpy(dup, str, len);
+	return (dup);
 }
 
-unsigned int ft_strlen (const char *str)
-{   
-    unsigned int i;
-    i = 0;
-    while(str[i] != '\0')
-        i++;
-    return i;
-}
-
-char *ft_strdup(const char *str)
-{
-    int i;
-    int len;
-    char *dup;
-    i = 0;
-    
-     if(str == NULL)
-        return NULL;
-    len = ft_strlen(str) + 1;
-    dup = (char *)malloc(len * sizeof(char));
-    ft_strlcpy(dup, str, len);
-    return (dup);
-    free(dup);
-    
-}
-
-int main()
-{
-    char s[] = "Codam Coder";
-    char *t = ft_strdup(s);
-    printf("%s", s);
-}
+// int main()
+// {
+//     char s[] = "Codam Coder";
+//     char *t = ft_strdup(s);
+//     printf("%s\n", t);
+// 	printf("%s\n", strdup(s));
+// }
