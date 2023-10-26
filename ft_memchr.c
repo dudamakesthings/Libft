@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 18:12:22 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/26 11:53:03 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/26 11:56:18 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ void	*ft_memchr(const void *s, int c, size_t nbytes)
 // {
 //     const char str[] = "MmARIA";
 //     const char ch = 'A';
-    
 //     char *m = ft_memchr(str, ch, 3);
 //     printf("%s", m);
 // }
