@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 16:28:14 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/24 19:48:15 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/26 18:56:13 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		return ;
 	while (s[i] != '\0')
 	{
-		f(i, &s[i]);
+		f(i, s);
 		i++;
 	}
 }
-// void tester(unsigned int i, char* c)
-// {   
-//     i--;
-//     if(c[0] >= 'a' && c[0] <= 'z')
-//         c = c - 32;
-//     printf("%s", c);
+
+// void tester(unsigned int index, char *c)
+// {
+// 	c[index] = ft_toupper(c[index]);
 // }
+
 // int main()
 // {
-//     char f[] = "CODAM";
-//     ft_striteri(f, tester);
+// 	char s[] = "hello";
+//     ft_striteri(s, &tester);
+//     printf("%s", s);
 // }
