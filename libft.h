@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/24 12:31:26 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/25 18:50:26 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/26 19:38:13 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strdup(const char *str);
 char	*ft_strchr(const char *str, int c);
 char	**ft_split(char const *s, char c);
+
+// Write Functions
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putchar_fd(char c, int fd);
+
+// Memory Functions
+void	*ft_memset(void *s, int c, size_t nbytes);
+void	*ft_memmove(void *dst, const void *src, size_t nbytes);
+void	*ft_memcpy(void *dst, const void *src, size_t nbytes);
+int		ft_memcmp(const void *str1, const void *str2, size_t nbytes);
+void	*ft_memchr(const void *s, int c, size_t nbytes);
 
 
 #endif
