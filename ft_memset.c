@@ -1,40 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: edribeir <edribeir@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 15:25:18 by edribeir          #+#    #+#             */
-/*   Updated: 2023/10/05 14:08:21 by edribeir         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_memset.c                                        :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: edribeir <edribeir@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/10/03 15:25:18 by edribeir      #+#    #+#                 */
+/*   Updated: 2023/10/26 09:46:29 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-void *ft_memset(void *str, int c, unsigned int n)
+void	*ft_memset(void *s, int c, size_t nbytes)
 {
-    char *p = str; // for work with individual bytes
-    int i;
-    i = 0;
-  while(i < n)
-  {
-    p[i] = c;
-    i++;
-  } 
-  return str;
+	unsigned char	*str;
+	size_t			i;
+
+	str = s;
+	i = 0;
+	while (i < nbytes)
+	{
+		str[i] = c;
+		i++;
+	}
+	return (str);
 }
 
-int main()
-{
-    char s[] = "Little String";
-    int t = '0';
-    int num = 3;
-    
-    ft_memset(s, t, num);
-    printf("%s", s);
-}
+// int main()
+// {
+//     char s[] = "Little String";
+//     int t = '0';
+//     int num = 3;
+//     char *m = ft_memset(s, t, num);
+//     printf("%s", m);
+// }
 // s = "hello word"
 // int = 65;
 // size_t = 3;
