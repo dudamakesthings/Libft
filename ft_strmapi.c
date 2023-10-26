@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 11:39:26 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/25 13:55:40 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/26 18:29:01 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,18 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 
 // char tester(unsigned int i, char c)
-// {   
-//     return (i + c);
+// {
+// 	if ( i % 2 == 0)
+// 	{
+// 		if (c >= 'A' && c <= 'Z')
+// 			c = c + 32;
+// 	}
+// 	return (c);
 // }
+
 // int main()
 // {
-//     char *f = ft_strmapi("000", tester); // output 48, 49, 50
+// 	char s[] = "HellO";
+//     char *f = ft_strmapi(s, &tester);
 //     printf("%s", f);
 // }
