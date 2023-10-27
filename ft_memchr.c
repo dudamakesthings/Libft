@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/09 18:12:22 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/26 11:56:18 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/27 18:36:41 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,17 @@
 
 void	*ft_memchr(const void *s, int c, size_t nbytes)
 {
-	unsigned char	*buffer;
-	size_t			i;
+	unsigned char	*pointer;
+	unsigned char	tofind;
 
-	buffer = (unsigned char *)s;
-	i = 0;
-	while (buffer[i] != '\0' && (i < nbytes))
+	pointer = (unsigned char *)s;
+	tofind = (unsigned char)c;
+	while (nbytes > 0)
 	{
-		if (buffer[i] == (unsigned char)c)
-			return (&buffer[i]);
-		i++;
+		if (*pointer == tofind)
+			return ((void *)pointer);
+		nbytes--;
+		pointer++;
 	}
 	return (NULL);
 }
@@ -32,6 +33,6 @@ void	*ft_memchr(const void *s, int c, size_t nbytes)
 // {
 //     const char str[] = "MmARIA";
 //     const char ch = 'A';
-//     char *m = ft_memchr(str, ch, 3);
-//     printf("%s", m);
+//     printf("%s\n", (char *)ft_memchr(str, ch, 3));
+//     printf("%s", (char *)memchr(str, ch, 3));
 // }
