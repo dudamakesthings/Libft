@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 16:28:14 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/27 12:16:30 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/27 16:17:58 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 // void tester(unsigned int index, char *c)
 // {
-// 	*c = ft_toupper(*c);
+// 	if (index >= 0)
+// 		*c = ft_toupper(*c);
 // }
 
 // int main()
