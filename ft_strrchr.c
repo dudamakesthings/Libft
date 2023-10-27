@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/04 09:16:18 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/25 12:14:13 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/27 17:02:17 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,7 @@ char	*ft_strrchr(const char *str, int ch)
 {
 	int	i;
 
-	i = 0;
-	if (str[i] == '\0')
-		return (NULL);
-	while (str[i] != '\0')
-		i++;
-	i = i - 1;
+	i = ft_strlen(str);
 	while (i >= 0)
 	{
 		if (str[i] == (char)ch)
