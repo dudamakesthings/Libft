@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 16:44:12 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/25 14:26:00 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/27 16:23:24 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,34 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
+	size_t	src_len;
+	size_t	dst_len;
 	size_t	i;
-	size_t	j;
 
 	i = 0;
-	j = 0;
-	ft_strlen(dst);
-	while ((src[j] != '\0') && (i < dstsize - 1))
+	dst_len = ft_strlen(dst);
+	src_len = ft_strlen(src);
+	if (dstsize > dst_len + 1)
 	{
-		dst[i] = src[j];
-		i++;
-		j++;
+		while ((src[i] != '\0') && ((dst_len + 1 + i) < dstsize))
+		{
+			dst[dst_len + i] = src[i];
+			i++;
+		}
 	}
-	dst[i] = '\0';
-	return (i);
+	dst[dst_len + i] = '\0';
+	if (dstsize < dst_len)
+		return (src_len + dstsize);
+	else
+		return (dst_len + src_len);
 }
 
 // int main()
 // {
 //     char source[] = "Catnip";
 //     char dest[] = "Whiskas Sache";
-//     ft_strlcat(dest, source, 30);
-//     printf("%s", dest);
-//     strlcat(dest, source, 5); // compile with -lbsd
-//     printf("\n%s", dest);
+//     int j = ft_strlcat(dest, source, 5);
+//     printf("%s and the number of new dest %d", dest, j);
+//     j = strlcat(dest, source, 5); // compile with -lbsd
+//     printf("\n%s, %d", dest, j);
 // }
