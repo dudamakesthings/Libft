@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/03 16:45:20 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/25 15:46:29 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/27 11:44:14 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	int	i;
+	int				i;
+	unsigned char	chr;
 
+	chr = (unsigned char)c;
 	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] == c)
-			return ((char *)&str[i]);
+	while (str[i] != '\0' && str[i] != chr)
 		i++;
-	}
+	if (str[i] == chr)
+		return ((char *)&str[i]);
 	return (NULL);
 }
 
