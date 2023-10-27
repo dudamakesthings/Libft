@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/17 15:00:21 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/26 20:30:40 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/27 11:06:52 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,6 @@ char	*ft_itoa(int n)
 
 // int main()
 // {
-    
 //     // printf("%s\n", ft_itoa(-3251));
 //     printf("%s\n", ft_itoa(1234));
 //     // char *m = ft_itoa(number);

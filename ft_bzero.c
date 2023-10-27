@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: edribeir <edribeir@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 11:28:43 by edribeir          #+#    #+#             */
-/*   Updated: 2023/10/05 11:52:33 by edribeir         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_bzero.c                                         :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: edribeir <edribeir@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/10/05 11:28:43 by edribeir      #+#    #+#                 */
+/*   Updated: 2023/10/27 11:33:26 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-void ft_bzero(void *str, unsigned int n)
+void	ft_bzero(void *s, size_t n)
 {
-    char *p = str;
-    int i;
-    i = 0;
-    while(i < n)
-    {
-        p[i] = 0;
-        i++;
-    }
+	unsigned char	*str;
+	size_t			i;
+
+	str = (unsigned char *)s;
+	i = 0;
+	while (i < n)
+	{
+		str[i] = 0;
+		i++;
+	}
 }
 
-int main()
-{
-    char s[] = "ABCDE55444368";
-    int num = 3;
-
-    ft_bzero(s, num);
-    printf("%s", (s + 3));
-}
+// int main()
+// {
+//     char s[] = "ABCDE55444368";
+//     int num = 4;
+//     ft_bzero(s, num);
+//     printf("%s", (s + 4));
+// }
