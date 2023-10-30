@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 11:20:44 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/25 14:33:43 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/30 12:15:17 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
-	if (s1[i] == '\0' || s2[i] == '\0')
-		return (NULL);
 	len_newstr = ft_strlen(s1)+ ft_strlen(s2);
 	newstr = (char *)malloc((len_newstr + 1) * sizeof(char));
 	if (newstr == NULL)
