@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/17 10:42:31 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/25 18:46:47 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/30 17:11:52 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ char	**ft_split(char const *s, char c)
 	int		i;
 
 	i = 0;
-	if (s[i] == '\0')
+	if (s == NULL)
 		return (NULL);
 	array_str = (char **)malloc((ft_get_words(s, c) + 1) * sizeof(char *));
 	if (array_str == NULL)
