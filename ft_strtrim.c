@@ -6,33 +6,51 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/16 14:26:06 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/25 09:54:38 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/30 14:10:51 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+static int	ft_checkset(char c, char const *set)
 {
-	char	*newstr;
-	int		start;
-	int		end;
-	int		i;
+	int	i;
 
 	i = 0;
+	while (set[i])
+	{
+		if (c == set[i])
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	char	*new_str;
+	int		i;
+	int		start;
+	int		end;
+
 	start = 0;
-	if ((s1[i] == '\0') || set[i] == '\0')
-		return (0);
-	end = ft_strlen(s1) - 1;
-	while ((ft_strchr(set, s1[start])) && (start <= end))
+	i = 0;
+	while (s1[start] && ft_checkset(s1[start], set))
 		start++;
-	while ((ft_strchr(set, s1[end])) && (end >= 0))
+	end = ft_strlen(s1);
+	while (end > start && ft_checkset(s1[end -1], set))
 		end--;
-	newstr = (char *)malloc((end - start + 2) * sizeof(char));
-	if (newstr == 0)
-		return (0);
-	ft_strlcpy(newstr, &s1[start], (end - start + 2));
-	return (newstr);
+	new_str = (char *)malloc((end - start + 1) * sizeof(char));
+	if (new_str == NULL)
+		return (NULL);
+	while (start < end)
+	{
+		new_str[i] = s1[start];
+		i++;
+		start++;
+	}
+	new_str[i] = '\0';
+	return (new_str);
 }
 
 // int main()
