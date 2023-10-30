@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 11:39:26 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/26 18:29:01 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/30 12:17:45 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	if (s == NULL || f == NULL)
 		return (NULL);
-	newstr = (char *)malloc(ft_strlen(s) * sizeof(char));
+	newstr = (char *)malloc((ft_strlen(s)+ 1) * sizeof(char));
 	if (newstr == NULL)
 		return (NULL);
 	while (s[i] != '\0')
