@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/12 15:18:50 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/27 11:34:20 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/30 18:03:01 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_calloc(size_t nitems, size_t sizeitem)
 {
 	void	*dest;
 
+	if (nitems != 0 && (nitems * sizeitem) / nitems != sizeitem)
+		return (NULL);
 	dest = (void *)malloc(nitems * sizeitem);
 	if (dest == NULL)
 		return (NULL);
@@ -27,7 +29,7 @@ void	*ft_calloc(size_t nitems, size_t sizeitem)
 // {
 //     unsigned int i = 0;
 //     unsigned int nmemb = 3;
-//     int *numbers;
+//     int *numbers
 //     numbers =(int *)ft_calloc(nmemb, sizeof(int));
 //     while(i < nmemb)
 //     {
