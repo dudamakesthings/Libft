@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/24 10:23:35 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/26 09:32:28 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/30 13:46:24 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n < 0)
 	{
-		ft_putchar_fd('-', 1);
+		write(fd, "-", 1);
 		n = n * -1;
 	}
 	if (n >= 0 && n <= 9)
