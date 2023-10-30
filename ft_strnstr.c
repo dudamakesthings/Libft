@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/11 09:51:50 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/25 12:21:57 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/30 10:54:27 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		j = 0;
 		while (big[i + j] == little[j] && (i + j) < len)
 		{
+			j++;
 			if (little[j] == '\0')
 				return ((char *)&big[i]);
-			j++;
 		}
 		i++;
 	}
@@ -37,11 +37,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 // int main()
 // {
 //     char *largestring = "Foo Bar Baz";
-//     char *smallstring = "BBar";
+//     char *smallstring = " BBar";
 //     char *ptr;
-//     char *ptr1;
+//     // char *ptr1;
 //     ptr = ft_strnstr(largestring, smallstring, 5);
 //     printf("%s", ptr);
-//     ptr1 = strnstr(largestring, smallstring, 5);
-//     printf("\n%s", ptr1);
+//     // ptr1 = strnstr(largestring, smallstring, 5);
+//     // printf("\n%s", ptr1);
 // }
