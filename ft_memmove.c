@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/06 09:08:33 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/26 11:35:12 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/10/30 09:43:12 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,13 @@ void	*ft_memmove(void *dst, const void *src, size_t nbytes)
 // {
 //     // char source[] = {1, 2, 3, 4, 6};
 //     // char destin[8];
-// 	char source[] = {1, 2, 3, 4, 6};
-//     char destin[3];
+// 	char source[] = "Hello Squirtle";
+//     char destin[] = "Change";
+// 	printf("dest before %s\n", destin);
 // 	ft_memmove(destin, source, 3);
 // //    char *m = memmove(destin, source, 3);
-//     int j = 0;
-//     while (destin[j])
-//         printf("%d", destin[j++]);
+//     // int j = 0;
+//     // while (destin[j])
+//     //     printf("%d", destin[j++]);
+// 	printf("destin next %s", destin);
 // }
