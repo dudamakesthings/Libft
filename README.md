@@ -59,15 +59,15 @@ In total, there are 34 functions in the **mandatory** part and 9 in the **bonus*
 #### 🌠 Bonus 
 | Bonus Function | Description |
 | :------------: | :---------: |
-| ``ft_lstnew`` | Allocates with malloc and returns a new node. |
-| ``ft_lstadd_front`` | Adds the node ``new`` at the beginning of the list. |
-| ``ft_lstsize`` | Counts the number of nodes in a list. |
-| ``ft_lstlast`` | Returns the last node of the list. |
-| ``ft_lstadd_back`` | Adds the node ``new`` at the end of the list. |
-| ``ft_lstdelone`` | Takes as a parameter a node and frees the memory of the node’s content. The memory of ``next`` must not be freed. |
-| ``ft_lstclear`` | Deletes and frees the given node and every successor of that node and sets the pointer to the list with NULL. |
-| ``ft_lstiter`` | Iterates the list ``lst`` and applies the function ``f`` on the content of each node. |
-| ``ft_lstmap`` | Creates a new list resulting from the successive applications of the function ``f``. Use ``del`` if you need to delete the content. |
+| [``ft_lstnew``](https://github.com/dudamakesthings/Libft/blob/main/ft_lstnew.c) | Allocates with malloc and returns a new node. |
+| [``ft_lstadd_front``](https://github.com/dudamakesthings/Libft/blob/main/ft_lstadd_front.c) | Adds the node ``new`` at the beginning of the list. |
+| [``ft_lstsize``](https://github.com/dudamakesthings/Libft/blob/main/ft_lstsize.c) | Counts the number of nodes in a list. |
+| [``ft_lstlast``](https://github.com/dudamakesthings/Libft/blob/main/ft_lstlast.c) | Returns the last node of the list. |
+| [``ft_lstadd_back``](https://github.com/dudamakesthings/Libft/blob/main/ft_lstadd_back.c) | Adds the node ``new`` at the end of the list. |
+| [``ft_lstdelone``](https://github.com/dudamakesthings/Libft/blob/main/ft_lstdelone.c) | Takes as a parameter a node and frees the memory of the node’s content. The memory of ``next`` must not be freed. |
+| [``ft_lstclear``](https://github.com/dudamakesthings/Libft/blob/main/ft_lstclear.c) | Deletes and frees the given node and every successor of that node and sets the pointer to the list with NULL. |
+| [``ft_lstiter``](https://github.com/dudamakesthings/Libft/blob/main/ft_lstiter.c) | Iterates the list ``lst`` and applies the function ``f`` on the content of each node. |
+| [``ft_lstmap``](https://github.com/dudamakesthings/Libft/blob/main/ft_lstmap.c) | Creates a new list resulting from the successive applications of the function ``f``. Use ``del`` if you need to delete the content. |
 
 
 ---
