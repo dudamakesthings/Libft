@@ -18,10 +18,17 @@
 # include <stdio.h>
 # include <string.h>
 # include <ctype.h>
-# include <stddef.h> 
-# include <bsd/string.h> 
+# include <stddef.h>
+# include <bsd/string.h>
 # include <limits.h>
 # include <unistd.h>
+
+// Bonus Struct
+typedef struct	s_list
+{
+	void	*content;
+	struct	s_list *next;
+} t_list;
 
 // Character Function
 int		ft_toupper(int c);

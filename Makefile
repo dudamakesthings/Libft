@@ -56,8 +56,12 @@ SOURCE = ft_isdigit.c \
 		ft_putstr_fd.c \
 		ft_putnbr_fd.c \
 		ft_putendl_fd.c \
-		
+
+BONUS_SOURCE = ft_lstnew.c \
+
 OBJECTS = $(SOURCE:%.c=%.o)
+
+OBJECTS_BONUS = $(BONUS_SOURCE:%.c=%.o)
 
 all: $(NAME)
 
@@ -67,11 +71,14 @@ $(NAME) : $(OBJECTS)
 %.o:%.c $(CC) -c $(CFLAGS) -o $@ $^
 
 clean: 
-	$(RM) $(OBJECTS)
+	$(RM) $(OBJECTS) $(OBJECTS_BONUS)
 
 fclean: clean
 			$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+bonus: $(OBJECTS) $(OBJECTS_BONUS)
+			$(AR) $(NAME) $(OBJECTS) $(OBJECTS_BONUS)
+
+.PHONY: all clean fclean re bonus
