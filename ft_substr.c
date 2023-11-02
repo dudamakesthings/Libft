@@ -40,26 +40,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub_str);
 }
 
-// char	*ft_substr(char const *s, unsigned int start, size_t len)
-// {
-// 	size_t	src_len;
-// 	char	*substr;
-// 	int		i;
-
-// 	i = 0;
-// 	src_len = ft_strlen(s);
-// 	if (start > src_len)
-// 		return ((char *)malloc(1 * sizeof(char)));
-// 	if (src_len - start >= len)
-// 		substr = (char *)malloc((len + 1) * sizeof(char));
-// 	else
-// 		substr = (char *)malloc((src_len - start + 1) * sizeof(char));
-// 	if (substr == NULL)
-// 		return (NULL);
-// 	ft_strlcpy (substr, (&s[start]), len + 1);
-// 	return (substr);
-// }
-
 // int main(int argc, char **argv)
 // {
 // 	if (argc != 4)
