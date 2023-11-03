@@ -6,7 +6,7 @@
 #    By: edribeir <edribeir@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/10/20 13:36:22 by edribeir      #+#    #+#                  #
-#    Updated: 2023/10/24 19:47:13 by edribeir      ########   odam.nl          #
+#    Updated: 2023/11/03 12:21:47 by edribeir      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,6 +58,14 @@ SOURCE = ft_isdigit.c \
 		ft_putendl_fd.c \
 
 BONUS_SOURCE = ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
 
 OBJECTS = $(SOURCE:%.c=%.o)
 
@@ -78,7 +86,7 @@ fclean: clean
 
 re: fclean all
 
-bonus: $(OBJECTS) $(OBJECTS_BONUS)
-			$(AR) $(NAME) $(OBJECTS) $(OBJECTS_BONUS)
+bonus: $(OBJECTS_BONUS)
+			$(AR) $(NAME) $(OBJECTS_BONUS)
 
 .PHONY: all clean fclean re bonus
