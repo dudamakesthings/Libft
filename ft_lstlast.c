@@ -1,13 +1,22 @@
-include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   ft_lstlast.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/11/03 10:04:06 by edribeir      #+#    #+#                 */
+/*   Updated: 2023/11/03 10:32:30 by edribeir      ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
 
-t_list	*ft_lstlast(t_list *lst_header)
+#include "libft.h"
+
+t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*pointer_nodes;
-	int		position;
-
-	if (pointer_nodes == NULL)
+	if (lst == NULL)
 		return (NULL);
-	pointer_nodes = *lst_header;
-	position = ft_lstsize(pointer_nodes);
-	return (pointer_nodes + position);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }

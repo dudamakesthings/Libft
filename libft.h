@@ -6,7 +6,7 @@
 /*   By: edribeir <edribeir@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/24 12:31:26 by edribeir      #+#    #+#                 */
-/*   Updated: 2023/10/27 16:47:52 by edribeir      ########   odam.nl         */
+/*   Updated: 2023/11/03 10:27:18 by edribeir      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@
 # include <unistd.h>
 
 // Bonus Struct
-typedef struct	s_list
+typedef struct s_list
 {
 	void			*content;
-	struct	s_list 	*next;
-} 			t_list;
+	struct s_list	*next;
+}t_list;
 
 // Bonus Functions
 t_list	*ft_lstnew(void *content);
@@ -40,7 +40,6 @@ void	ft_lstdelone(t_list *lst_node, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-
 
 // Character Functions
 int		ft_toupper(int c);
