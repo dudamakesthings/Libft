@@ -79,9 +79,7 @@ static char	**create_array(char **array_str, char const *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	char	**array_str;
-	int		i;
 
-	i = 0;
 	if (s == NULL)
 		return (NULL);
 	array_str = (char **)malloc((ft_get_words(s, c) + 1) * sizeof(char *));
