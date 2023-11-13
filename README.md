@@ -14,47 +14,47 @@ In total, there are 34 functions in the **mandatory** part and 9 in the **bonus*
 
 | Function | Description |
 |--|--|
-|[``ft_isascii``](https://github.com/dudamakesthings/Libft/blob/main/ft_isascii.c)|tests if a given character, in the current locale, can be represented as a valid 7–bit US-ASCII character.|        
-|[``ft_isprint``](https://github.com/dudamakesthings/Libft/blob/main/ft_isprint.c)|checks whether a character is a printable character.|          
-|[``ft_isalpha``](https://github.com/dudamakesthings/Libft/blob/main/ft_isalpha.c)|checks if the passed character is alphabetic.|
-|[``ft_isdigit``](https://github.com/dudamakesthings/Libft/blob/main/ft_isdigit.c)|checks if the passed character is a decimal digit character.|
-|[``ft_isalnum``](https://github.com/dudamakesthings/Libft/blob/main/ft_isalnum.c)|checks if the passed character is alphanumeric.|
-|[``ft_tolower``](https://github.com/dudamakesthings/Libft/blob/main/ft_tolower.c)|converts a given letter to lowercase.|
-|[``ft_toupper``](https://github.com/dudamakesthings/Libft/blob/main/ft_toupper.c)|converts a given letter to uppercase.|
-|[``ft_strlen``](https://github.com/dudamakesthings/Libft/blob/main/ft_strlen.c)|computes the length of the string str up to, but not including the terminating null character.|
-|[``ft_strchr``](https://github.com/dudamakesthings/Libft/blob/main/ft_strchr.c)|searches for first occurrence of _c_ in the string _*str_.|
-|[``ft_strrchr``](https://github.com/dudamakesthings/Libft/blob/main/ft_strrchr.c)|searches for the last occurrence of the character _c_ (an unsigned char) in the string pointed to, by the argument _str_.|
-|[``ft_strnstr``](https://github.com/dudamakesthings/Libft/blob/main/ft_strnstr.c)|locates the first occurrence of the null-terminated string pointed by _little_ in string pointed by _big_. Characters that appear after a _'\0'_ or _len_ are not searched.|
-|[``ft_strncmp``](https://github.com/dudamakesthings/Libft/blob/main/ft_strncmp.c)|compares at most the first _n_ bytes of _str1_ and _str2_.|
-|[``ft_strlcpy``](https://github.com/dudamakesthings/Libft/blob/main/ft_strlcpy.c)|copies up to _size - 1_ characters from the NUL-terminated string _src_ to _dest_, NUL-terminating the result.|
-|[``ft_strlcat``](https://github.com/dudamakesthings/Libft/blob/main/ft_strlcat.c)|appends the NUL-terminated string _src_ to the end of _dest_. It will append at most _size - strlen(dst) - 1 bytes_, NUL-terminating the result.|
-|[``ft_strdup``](https://github.com/dudamakesthings/Libft/blob/main/ft_strdup.c)|returns a pointer to a new string duplicated of the string _s_. Memory for the new string is obtained with malloc.|
-|[``ft_atoi``](https://github.com/dudamakesthings/Libft/blob/main/ft_atoi.c)|converts the initial portion of the string pointed to by _str_ to int.|
+|[``ft_isascii``](https://github.com/dudamakesthings/Libft/blob/main/ft_isascii.c)| Tests if a given character, in the current locale, can be represented as a valid 7–bit US-ASCII character.|        
+|[``ft_isprint``](https://github.com/dudamakesthings/Libft/blob/main/ft_isprint.c)| Checks whether a character is a printable character.|          
+|[``ft_isalpha``](https://github.com/dudamakesthings/Libft/blob/main/ft_isalpha.c)| Checks if the passed character is alphabetic.|
+|[``ft_isdigit``](https://github.com/dudamakesthings/Libft/blob/main/ft_isdigit.c)| Checks if the passed character is a decimal digit character.|
+|[``ft_isalnum``](https://github.com/dudamakesthings/Libft/blob/main/ft_isalnum.c)| Checks if the passed character is alphanumeric.|
+|[``ft_tolower``](https://github.com/dudamakesthings/Libft/blob/main/ft_tolower.c)| Converts a given letter to lowercase.|
+|[``ft_toupper``](https://github.com/dudamakesthings/Libft/blob/main/ft_toupper.c)| Converts a given letter to uppercase.|
+|[``ft_strlen``](https://github.com/dudamakesthings/Libft/blob/main/ft_strlen.c)| Computes the length of the string str up to, but not including the terminating null character.|
+|[``ft_strchr``](https://github.com/dudamakesthings/Libft/blob/main/ft_strchr.c)| Searches for first occurrence of ``c`` in the string ``*str``.|
+|[``ft_strrchr``](https://github.com/dudamakesthings/Libft/blob/main/ft_strrchr.c)| Searches for the last occurrence of the character ``c`` (an unsigned char) in the string pointed to, by the argument ``str``.|
+|[``ft_strnstr``](https://github.com/dudamakesthings/Libft/blob/main/ft_strnstr.c)| Locates the first occurrence of the null-terminated string pointed by ``little`` in string pointed by ``big``. Characters that appear after a ``'\0'`` or ``len`` are not searched.|
+|[``ft_strncmp``](https://github.com/dudamakesthings/Libft/blob/main/ft_strncmp.c)| Compares at most the first ``n`` bytes of ``str1`` and ``str2``.|
+|[``ft_strlcpy``](https://github.com/dudamakesthings/Libft/blob/main/ft_strlcpy.c)| Copies up to ``size - 1`` characters from the NUL-terminated string ``src`` to ``dest``, NUL-terminating the result.|
+|[``ft_strlcat``](https://github.com/dudamakesthings/Libft/blob/main/ft_strlcat.c)| Appends the NUL-terminated string ``src`` to the end of ``dest``. It will append at most ``size - strlen(dst) - 1 bytes``, NUL-terminating the result.|
+|[``ft_strdup``](https://github.com/dudamakesthings/Libft/blob/main/ft_strdup.c)| Returns a pointer to a new string duplicated of the string ``s``. Memory for the new string is obtained with malloc.|
+|[``ft_atoi``](https://github.com/dudamakesthings/Libft/blob/main/ft_atoi.c)| Converts the initial portion of the string pointed to by ``str`` to int.|
 |_Memory Functions_ 
-|[``ft_memset``](https://github.com/dudamakesthings/Libft/blob/main/ft_memset.c)|fills memory with a constant byte.|
-|[``ft_bzero``](https://github.com/dudamakesthings/Libft/blob/main/ft_bzero.c)|copies _n_ bytes, each with a value of zero, into string _s_.|
-|[``ft_memcpy``](https://github.com/dudamakesthings/Libft/blob/main/ft_memcpy.c)|copies _n_ bytes from memory area _src_ to memory area _dest_. The memory areas must not overlap. Use **ft_memmove** if the memory areas overlap.|
-|[``ft_memmove``](https://github.com/dudamakesthings/Libft/blob/main/ft_memmove.c)|copies _n_ bytes from memory area _src_ to memory area _dest_ and will not be corrupted if memory areas overlap.|
-|[``ft_memchr``](https://github.com/dudamakesthings/Libft/blob/main/ft_memchr.c)|Searches within the first _n_ bytes of the block of memory pointed by _str_ for the first occurrence of _c_ (interpreted as an unsigned char), and returns a pointer to it.|
-|[``ft_memcmp``](https://github.com/dudamakesthings/Libft/blob/main/ft_memcmp.c)|compares _n_ byte string s1 against _n_ byte string s2.|
-|[``ft_calloc``](https://github.com/dudamakesthings/Libft/blob/main/ft_calloc.c)|allocates _size_ bytes and returns a pointer to the allocated memory. The memory is not initialized.|
+|[``ft_memset``](https://github.com/dudamakesthings/Libft/blob/main/ft_memset.c)| Fills memory with a constant byte.|
+|[``ft_bzero``](https://github.com/dudamakesthings/Libft/blob/main/ft_bzero.c)| Copies ``n`` bytes, each with a value of zero, into string ``s``.|
+|[``ft_memcpy``](https://github.com/dudamakesthings/Libft/blob/main/ft_memcpy.c)| Copies ``n`` bytes from memory area ``src`` to memory area ``dest``. The memory areas must not overlap. Use ``ft_memmove`` if the memory areas overlap.|
+|[``ft_memmove``](https://github.com/dudamakesthings/Libft/blob/main/ft_memmove.c)| Copies ``n`` bytes from memory area ``src`` to memory area ``dest`` and will not be corrupted if memory areas overlap.|
+|[``ft_memchr``](https://github.com/dudamakesthings/Libft/blob/main/ft_memchr.c)| Searches within the first ``n`` bytes of the block of memory pointed by ``str`` for the first occurrence of ``c`` (interpreted as an unsigned char), and returns a pointer to it.|
+|[``ft_memcmp``](https://github.com/dudamakesthings/Libft/blob/main/ft_memcmp.c)| Compares ``n`` byte string s1 against ``n`` byte string s2.|
+|[``ft_calloc``](https://github.com/dudamakesthings/Libft/blob/main/ft_calloc.c)| Allocates ``size`` bytes and returns a pointer to the allocated memory. The memory is not initialized.|
 
 #### Additional functions from the mandatory part
 
 | function | description |
 |--|--|
-|[``ft_substr``](https://github.com/dudamakesthings/Libft/blob/main/ft_substr.c)| allocates (with malloc) and returns a substring from the string _s_. The substring begins at index _start_ and is of maximum size _len_.| 
-|[``ft_strjoin``](https://github.com/dudamakesthings/Libft/blob/main/ft_strjoin.c)| allocates (with malloc) and returns a new string, which is the result of the concatenation of _s1_ and _s2_.|
-|[``ft_strtrim``](https://github.com/dudamakesthings/Libft/blob/main/ft_strtrim.c)| allocates (with malloc) and returns a copy of _s1_ with the characters specified in _set_ removed from the beginning and the end of the string.|
-|[``ft_split``](https://github.com/dudamakesthings/Libft/blob/main/ft_split.c)| allocates (with malloc) and returns an array of strings obtained by splitting _s_ using the character _c_ as a delimiter. The array must blended by a NULL pointer.|
-|[``ft_itoa``](https://github.com/dudamakesthings/Libft/blob/main/ft_itoa.c)| allocates (with malloc) and returns a string representing the integer received as an argument. Negative numbers must be handled.|
-|[``ft_strmapi``](https://github.com/dudamakesthings/Libft/blob/main/ft_strmapi.c)| applies the function _f_ to each character of the string _s_ to create a new string (with malloc) resulting from successive applications of _f_.|
-|[``ft_striteri``](https://github.com/dudamakesthings/Libft/blob/main/ft_striteri.c)| applies the function _f_ to each character of the string passed as an argument and passes its index as the first argument. Each character is passed by address to f to be modified if necessary.|
+|[``ft_substr``](https://github.com/dudamakesthings/Libft/blob/main/ft_substr.c)| Allocates (with malloc) and returns a substring from the string ``s``. The substring begins at index ``start`` and is of maximum size ``len``.| 
+|[``ft_strjoin``](https://github.com/dudamakesthings/Libft/blob/main/ft_strjoin.c)| Allocates (with malloc) and returns a new string, which is the result of the concatenation of ``s1`` and ``s2``.|
+|[``ft_strtrim``](https://github.com/dudamakesthings/Libft/blob/main/ft_strtrim.c)| Allocates (with malloc) and returns a copy of ``s1`` with the characters specified in ``set`` removed from the beginning and the end of the string.|
+|[``ft_split``](https://github.com/dudamakesthings/Libft/blob/main/ft_split.c)| Allocates (with malloc) and returns an array of strings obtained by splitting ``s`` using the character ``c`` as a delimiter. The array must blended by a NULL pointer.|
+|[``ft_itoa``](https://github.com/dudamakesthings/Libft/blob/main/ft_itoa.c)| Allocates (with malloc) and returns a string representing the integer received as an argument. Negative numbers must be handled.|
+|[``ft_strmapi``](https://github.com/dudamakesthings/Libft/blob/main/ft_strmapi.c)| Applies the function ``f`` to each character of the string ``s`` to create a new string (with malloc) resulting from successive applications of ``f``.|
+|[``ft_striteri``](https://github.com/dudamakesthings/Libft/blob/main/ft_striteri.c)| Applies the function ``f`` to each character of the string passed as an argument and passes its index as the first argument. Each character is passed by address to ``f`` to be modified if necessary.|
 |_Print Functions_
-|[``ft_putchar_fd``](https://github.com/dudamakesthings/Libft/blob/main/ft_putchar_fd.c)| outputs the character _c_ to the given file descriptor.|
-|[``ft_putstr_fd``](https://github.com/dudamakesthings/Libft/blob/main/ft_putstr_fd.c)| outputs the string _s_ to the given file descriptor.|
-|[``ft_putendl_fd``](https://github.com/dudamakesthings/Libft/blob/main/ft_putendl_fd.c)| outputs the string _s_ to the given file descriptor, followed by a new line.|
-|[``ft_putnbr_fd``](https://github.com/dudamakesthings/Libft/blob/main/ft_putnbr_fd.c)| outputs the integer _n_ to the given file descriptor.|
+|[``ft_putchar_fd``](https://github.com/dudamakesthings/Libft/blob/main/ft_putchar_fd.c)| Outputs the character ``c`` to the given file descriptor.|
+|[``ft_putstr_fd``](https://github.com/dudamakesthings/Libft/blob/main/ft_putstr_fd.c)| Outputs the string ``s`` to the given file descriptor.|
+|[``ft_putendl_fd``](https://github.com/dudamakesthings/Libft/blob/main/ft_putendl_fd.c)| Outputs the string ``s`` to the given file descriptor, followed by a new line.|
+|[``ft_putnbr_fd``](https://github.com/dudamakesthings/Libft/blob/main/ft_putnbr_fd.c)| Outputs the integer ``n`` to the given file descriptor.|
 
 #### 🌠 Bonus 
 | Bonus Function | Description |
@@ -77,7 +77,3 @@ To test my project I used two testers, thanks to the creators.
 
 * [Francinette - Xicodomingues](https://github.com/xicodomingues/francinette)
 
----
-
-### ℹ️ Source
-The pdf [Subject](https://cdn.intra.42.fr/pdf/pdf/95631/en.subject.pdf)
